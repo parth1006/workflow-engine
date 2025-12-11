@@ -390,43 +390,6 @@ The workflow loops back to step 4 (Suggest Improvements) if:
 14. **Conditional Nodes** - Dedicated node type for branching logic
 15. **Sub-workflows** - Compose workflows from other workflows
 
----
-
-## 📁 Project Structure
-```
-workflow-engine/
-├── app/
-│   ├── __init__.py
-│   ├── main.py                    # FastAPI app & startup
-│   ├── core/
-│   │   ├── __init__.py
-│   │   ├── models.py              # Pydantic models
-│   │   ├── graph_engine.py        # Execution engine
-│   │   └── tool_registry.py       # Tool management
-│   ├── api/
-│   │   ├── __init__.py
-│   │   └── routes.py              # API endpoints
-│   ├── storage/
-│   │   ├── __init__.py
-│   │   ├── base.py                # Abstract interface
-│   │   └── sqlite_storage.py     # SQLite implementation
-│   ├── workflows/
-│   │   ├── __init__.py
-│   │   └── code_review.py         # Sample workflow
-│   └── utils/
-│       ├── __init__.py
-│       └── helpers.py             # Utility functions
-├── data/
-│   └── workflow.db                # SQLite database
-├── tests/
-│   └── __init__.py
-├── venv/                          # Virtual environment
-├── requirements.txt               # Dependencies
-├── run.py                         # Server startup script
-├── .env.example                   # Environment template
-├── .gitignore
-└── README.md
-```
 
 ---
 
